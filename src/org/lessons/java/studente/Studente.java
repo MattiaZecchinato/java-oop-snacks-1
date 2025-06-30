@@ -14,13 +14,13 @@ public class Studente {
         this.age = age;
     }
 
-    public void setFisrtName(String firstName) {
+    public void setFirstName(String firstName) {
         if (firstName != null) {
             this.firstName = firstName;
         }
     }
 
-    public String getFisrtName() {
+    public String getFirstName() {
         return this.firstName;
     }
 
