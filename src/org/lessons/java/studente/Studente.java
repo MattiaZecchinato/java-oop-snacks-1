@@ -1,3 +1,5 @@
+package org.lessons.java.studente;
+
 public class Studente {
 
     private static int ageMin = 15;
