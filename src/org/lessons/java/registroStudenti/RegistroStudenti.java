@@ -18,18 +18,18 @@ public class RegistroStudenti {
 
     public void addStudent(String firstName, String lastName, int age) {
         // add new student to studentRegister
-        studentRegister[studentRegister.length - 1] = new Studente(firstName, lastName, age);
+        this.studentRegister[this.studentRegister.length - 1] = new Studente(firstName, lastName, age);
 
         // create new array with 1 more slot
-        Studente[] newStudentRegister = new Studente[studentRegister.length + 1];
+        Studente[] newStudentRegister = new Studente[this.studentRegister.length + 1];
 
         // copy all the element from the old array into the new one
-        for (int i = 0; i < studentRegister.length; i++) {
-            newStudentRegister[i] = studentRegister[i];
+        for (int i = 0; i < this.studentRegister.length; i++) {
+            newStudentRegister[i] = this.studentRegister[i];
         }
 
         // set the old array with the new one
-        studentRegister = newStudentRegister;
+        this.studentRegister = newStudentRegister;
 
         System.out.println("New student added!");
     }
